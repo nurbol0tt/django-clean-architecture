@@ -5,5 +5,5 @@ from django.contrib import admin
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/v1/', include('routers.api_router')),
+    path('api/v1/', include('src.routers.api_router')),
 ]
