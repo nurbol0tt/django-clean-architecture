@@ -1,4 +1,5 @@
 import os
+from os.path import join
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -16,6 +17,9 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    "jet.dashboard",
+    "jet",
+
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -110,7 +114,16 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = "static/"
+MEDIA_URL_DIR = os.path.dirname(BASE_DIR)
+
+STATIC_URL = "/static/"
+STATIC_ROOT = (
+    join(BASE_DIR.parent, 'static')
+)
+
+MEDIA_URL = '/media/'
+MEDIA_DIR = join('BASE_DIR', 'media')
+MEDIA_ROOT = MEDIA_DIR
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
