@@ -1,6 +1,6 @@
 # Django Template
 
-![Project Logo](/path/to/logo.png)
+![Project Logo](../src/static/django-logo-negative.png)
 
 - [Installation](#installation)
 - [Configuration](#configuration)
