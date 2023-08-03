@@ -1,9 +1,6 @@
-# MiracleSoft
+# Django Template
 
 ![Project Logo](/path/to/logo.png)
-
-## Django Template
-
 
 - [Installation](#installation)
 - [Configuration](#configuration)
